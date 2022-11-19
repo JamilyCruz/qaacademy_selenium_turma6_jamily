@@ -41,10 +41,18 @@ public class RegisterTest {
         driver.findElement(By.id("firstpassword")).sendKeys("Padrao@123");
         driver.findElement(By.id("secondpassword")).sendKeys("Padrao@123");
 
-
-
+    }
+    @Test
+    public void RegisterPage(){
+        RegisterPage registerPage = new RegisterPage();
+        registerPage.preencherNome(driver);
+        registerPage.preencherSobreNome(driver);
+        registerPage.preencherEmail(driver);
+        registerPage.preencherTelefone(driver);
+        registerPage.selecionarGenero(driver);
+        registerPage.clicarHobbie(driver);
+        registerPage.selecionarSkill(driver);
+        registerPage.selecionarCountries(driver);
 
     }
-
-
 }
